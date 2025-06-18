@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sheryians Hero Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+  </head>
+
+  <body class="bg-white dark:bg-gray-900 text-black dark:text-white overflow-hidden h-screen">
+   
+    <nav class="flex justify-between items-center px-6 py-4 bg-white dark:bg-gray-800 shadow-md">
+
+      <div class="flex items-center space-x-2">
+        <img src="https://avatars.githubusercontent.com/u/69582226?v=4" alt="logo" class="w-8 h-8 rounded-full" />
+        <span class="font-semibold text-lg">Sheryians Coding School</span>
+      </div>
+
+      
+      <div class="hidden md:flex space-x-6 font-medium">
+        <a href="#" class="hover:text-green-500">Home</a>
+        <a href="#" class="hover:text-green-500">Courses</a>
+        <a href="#" class="hover:text-green-500">Campus Ambassador</a>
+        <a href="#" class="hover:text-green-500">Girls Who Code</a>
+        <a href="#" class="hover:text-green-500">Inertia</a>
+        <a href="#" class="hover:text-green-500">Classroom</a>
+        <a href="#" class="hover:text-green-500">Sign In</a>
+      </div>
+
+      
+      <button id="modeToggle" class="ml-4 px-3 py-1 rounded bg-gray-200 dark:bg-gray-700 text-sm">
+        Toggle Mode
+      </button>
+    </nav>
+
+
+    <div class="flex flex-col md:flex-row h-[calc(100vh-72px)] overflow-hidden">
+    
+      <div class="w-full md:w-1/2 flex items-center justify-center px-6">
+        <div>
+          <h1 class="font-bold text-4xl md:text-5xl">
+            Learn from the <span class="text-green-400 dark:text-green-300">coolest coding platform</span> <br />
+            in India.
+          </h1>
+          <p class="mt-4 font-semibold">Top notch projects</p>
+          <p class="font-semibold">Supports via members</p>
+          <button class="bg-slate-700 dark:bg-slate-500 mt-5 px-4 py-2 text-white rounded">Explore Here</button>
+          <p class="mt-6 font-mono text-sm">
+            We are about coding and designing, it is our health and we would love to share all of it with you.
+          </p>
+        </div>
+      </div>
+
+  
+      <div class="w-full md:w-1/2">
+        <img
+          src="https://aakalan.org/static/media/header-img.ea42b30ca3fe23aed450.webp"
+          alt="Header Image"
+          class="w-full h-full object-cover"
+        />
+      </div>
+    </div>
+
+  
+    <script>
+      const btn = document.getElementById("modeToggle");
+      const html = document.documentElement;
+
+      btn.addEventListener("click", () => {
+        html.classList.toggle("dark");
+      });
+    </script>
+  </body>
+</html>
